@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSIS_autTest", "FSIS_autTest\FSIS_autTest.csproj", "{1954D0CE-2B5F-444B-AB57-41AEF18B8516}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1954D0CE-2B5F-444B-AB57-41AEF18B8516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1954D0CE-2B5F-444B-AB57-41AEF18B8516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1954D0CE-2B5F-444B-AB57-41AEF18B8516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1954D0CE-2B5F-444B-AB57-41AEF18B8516}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25025DD9-7F19-42CA-B253-091177A3B37B}
+	EndGlobalSection
+EndGlobal
