@@ -14,12 +14,12 @@ namespace FSIS_autTest
         {
             using (IWebDriver driver = new ChromeDriver())
             {
-                driver.Navigate().GoToUrl("http://floodsimple.huisdigital.com/quote");
+                driver.Navigate().GoToUrl("https://staging.floodsimple.com/quote");
                 driver.Manage().Window.FullScreen();
 
                 DemoHelper.Pause();
 
-                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div/input")).SendKeys("105 HILLVIEW DR, ROCK SPRINGS, WY 82901");
+                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div/input")).SendKeys("6115 W CHEERY LYNN RD, PHOENIX, AZ 85033");
                 //Input Address
                 //You should change the address after running this test to avoid duplicate quotes
                 
@@ -76,9 +76,9 @@ namespace FSIS_autTest
 
                 DemoHelper.Pause();
 
-                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div[1]/div[1]/input")).SendKeys("ApproveAutoTest");
+                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div[1]/div[1]/input")).SendKeys("AZ85033Test");
                 //Input First Name
-                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div[1]/div[2]/input")).SendKeys("ApproveAutoTest");
+                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div[1]/div[2]/input")).SendKeys("AZ85033Test");
                 //Input Last Name
                 driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div[1]/div[3]/input")).SendKeys("test@huisdigital.com");
                 //Input Email

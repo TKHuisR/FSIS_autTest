@@ -19,7 +19,7 @@ namespace FSIS_autTest
 
                 DemoHelper.Pause();
 
-                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div/input")).SendKeys("1705 3RD AVE S, FARGO, ND 58103");
+                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div/input")).SendKeys("1342 11TH AVE S, FARGO, ND 58103");
                 //Input Address
                 //You should change the address after running this test to avoid duplicate quotes
                 DemoHelper.Pause();
@@ -83,7 +83,7 @@ namespace FSIS_autTest
                 driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div[1]/div[3]/input")).SendKeys("test@huisdigital.com");
                 //Input Email
                 DemoHelper.Pause();
-                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/button")).Click();
+                //driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/button")).Click();
                 //Click "Email Quote"
                 DemoHelper.Pause(7000);
             }
