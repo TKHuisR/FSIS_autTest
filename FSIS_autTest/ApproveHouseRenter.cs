@@ -15,7 +15,7 @@ namespace FSIS_autTest
             using (IWebDriver driver = new ChromeDriver())
             {
                 driver.Navigate().GoToUrl("https://staging.floodsimple.com/quote");
-                driver.Manage().Window.FullScreen();
+                //driver.Manage().Window.FullScreen();
 
                 DemoHelper.Pause();
 
