@@ -61,6 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApproveHouseDuplex.cs" />
+    <Compile Include="ApproveHouseRenter.cs" />
+    <Compile Include="ApproveTownHouseBasement.cs" />
+    <Compile Include="ApproveTownHouseSlab.cs" />
     <Compile Include="ApproveQuoteCreating.cs" />
     <Compile Include="DeclineByFloodLoss.cs" />
     <Compile Include="DeclineByMobile.cs" />

@@ -6,7 +6,7 @@ using System.Threading;
 
 namespace FSIS_autTest
 {
-    public class ApproveQuoteCreating
+    public class ApproveHouseDuplex
     {
         [Fact]
         [Trait("Category", "Smoke")]
@@ -19,7 +19,7 @@ namespace FSIS_autTest
 
                 DemoHelper.Pause();
 
-                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div/input")).SendKeys("6115 W CHEERY LYNN RD, PHOENIX, AZ 85033");
+                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div/input")).SendKeys("15 BRADY AVE NW, ATLANTA, GA 30301");
                 //Input Address
                 //You should change the address after running this test to avoid duplicate quotes
                 
@@ -32,7 +32,7 @@ namespace FSIS_autTest
 
                 DemoHelper.Pause();
 
-                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div[1]/div[2]/div[2]/input")).SendKeys("75000");
+                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div[1]/div[2]/div[2]/input")).SendKeys("175000");
                 //Input Coverage
                 
                 DemoHelper.Pause();
@@ -55,8 +55,8 @@ namespace FSIS_autTest
                 //Open dropdown list
                 DemoHelper.Pause();
 
-                driver.FindElement(By.XPath("/html/body/div[1]/div[2]/div/div/div/mat-option[1]")).Click();
-                //Select "Residental - Owner Occupied"
+                driver.FindElement(By.XPath("/html/body/div[1]/div[2]/div/div/div/mat-option[3]")).Click();
+                //Select "Duplex"
                 DemoHelper.Pause();
 
                 driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/ul/li[1]/button")).Click();
@@ -76,14 +76,14 @@ namespace FSIS_autTest
 
                 DemoHelper.Pause();
 
-                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div[1]/div[1]/input")).SendKeys("AZ85033Test");
+                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div[1]/div[1]/input")).SendKeys("ApproveHouseDuplex");
                 //Input First Name
-                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div[1]/div[2]/input")).SendKeys("AZ85033Test");
+                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div[1]/div[2]/input")).SendKeys("ApproveHouseDuplex");
                 //Input Last Name
                 driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div[1]/div[3]/input")).SendKeys("test@huisdigital.com");
                 //Input Email
                 DemoHelper.Pause();
-                //driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/button")).Click();
+                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/button")).Click();
                 //Click "Email Quote"
                 DemoHelper.Pause(7000);
             }

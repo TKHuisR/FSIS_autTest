@@ -6,7 +6,7 @@ using System.Threading;
 
 namespace FSIS_autTest
 {
-    public class ApproveQuoteCreating
+    public class ApproveTownHouse1
     {
         [Fact]
         [Trait("Category", "Smoke")]
@@ -19,7 +19,7 @@ namespace FSIS_autTest
 
                 DemoHelper.Pause();
 
-                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div/input")).SendKeys("6115 W CHEERY LYNN RD, PHOENIX, AZ 85033");
+                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div/input")).SendKeys("5953 W MULBERRY DR, PHOENIX, AZ 85033");
                 //Input Address
                 //You should change the address after running this test to avoid duplicate quotes
                 
@@ -43,24 +43,33 @@ namespace FSIS_autTest
 
                 DemoHelper.Pause();
 
-                IWebElement propertyType = driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/ul/li[1]/button"));
+                IWebElement propertyType = driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/ul/li[2]/button"));
 
                 propertyType.Click();
-                //Select "House"
+                //Select "Condo/Townhouse"
                 DemoHelper.Pause();
 
-                IWebElement TypeDropdown = driver.FindElement(By.ClassName("mat-select-arrow-wrapper"));
+                IWebElement TypeDropdown = driver.FindElement(By.ClassName("mat-select-arrow"));
 
                 TypeDropdown.Click();
                 //Open dropdown list
                 DemoHelper.Pause();
 
-                driver.FindElement(By.XPath("/html/body/div[1]/div[2]/div/div/div/mat-option[1]")).Click();
-                //Select "Residental - Owner Occupied"
+                driver.FindElement(By.XPath("/html/body/div[1]/div[2]/div/div/div/mat-option[6]")).Click();
+                //Select "Apartment"
                 DemoHelper.Pause();
 
-                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/ul/li[1]/button")).Click();
-                //Select "Home on Slab"
+                driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/ul/li[2]")).Click();
+                //Select "Home with Basement"
+                DemoHelper.Pause();
+
+                driver.FindElement(By.ClassName("mat-select-arrow-wrapper")).Click();
+                //Open dropdown list
+
+                DemoHelper.Pause();
+                driver.FindElement(By.XPath("/html/body/div[1]/div[2]/div/div/div/mat-option[1]")).Click();
+                //Select "Full basement"
+
                 DemoHelper.Pause();
 
                 driver.FindElement(By.XPath("/html/body/app-root/div/section/app-quote/div[1]/div/div/div[1]/input")).SendKeys("1500");
